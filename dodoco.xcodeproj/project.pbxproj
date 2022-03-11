@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83781252AD1981462656330B /* Pods_dodoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD83F736E9DE394201FBD55F /* Pods_dodoco.framework */; };
+		A90551BF27DB36CF00E93360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90551BE27DB36CF00E93360 /* AppDelegate.swift */; };
+		A90551C127DB36CF00E93360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90551C027DB36CF00E93360 /* SceneDelegate.swift */; };
+		A90551C327DB36CF00E93360 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90551C227DB36CF00E93360 /* LoginViewController.swift */; };
+		A90551C627DB36CF00E93360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90551C427DB36CF00E93360 /* Main.storyboard */; };
+		A90551C827DB36D200E93360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90551C727DB36D200E93360 /* Assets.xcassets */; };
+		A90551CB27DB36D200E93360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90551C927DB36D200E93360 /* LaunchScreen.storyboard */; };
+		A90551D927DCED7800E93360 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90551D827DCED7800E93360 /* AuthService.swift */; };
+		A9B78A9C27DDF59300FACACF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78A9B27DDF59300FACACF /* LoginViewModel.swift */; };
+		A9B78A9E27DDF66C00FACACF /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78A9D27DDF66C00FACACF /* NetworkRequestManager.swift */; };
+		A9B78AA027DDFD5000FACACF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78A9F27DDFD5000FACACF /* UserInfo.swift */; };
+		A9B78AA327DE105700FACACF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78AA227DE105700FACACF /* BaseViewController.swift */; };
+		A9B78AA827DE180400FACACF /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78AA727DE180400FACACF /* ServiceAssembly.swift */; };
+		A9B78AAA27DE188700FACACF /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B78AA927DE188700FACACF /* DependencyProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05F85293695ACC44E4F83E0F /* Pods-dodoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dodoco.release.xcconfig"; path = "Target Support Files/Pods-dodoco/Pods-dodoco.release.xcconfig"; sourceTree = "<group>"; };
+		792713EC6EB45F783F66B47B /* Pods-dodoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dodoco.debug.xcconfig"; path = "Target Support Files/Pods-dodoco/Pods-dodoco.debug.xcconfig"; sourceTree = "<group>"; };
+		A90551BB27DB36CF00E93360 /* dodoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90551BE27DB36CF00E93360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A90551C027DB36CF00E93360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A90551C227DB36CF00E93360 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A90551C527DB36CF00E93360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90551C727DB36D200E93360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A90551CA27DB36D200E93360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A90551CC27DB36D200E93360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90551D827DCED7800E93360 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A9B78A9B27DDF59300FACACF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A9B78A9D27DDF66C00FACACF /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
+		A9B78A9F27DDFD5000FACACF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A9B78AA227DE105700FACACF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A9B78AA727DE180400FACACF /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		A9B78AA927DE188700FACACF /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		AD83F736E9DE394201FBD55F /* Pods_dodoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dodoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90551B827DB36CF00E93360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83781252AD1981462656330B /* Pods_dodoco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1902AAF87E92E51865953E4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				792713EC6EB45F783F66B47B /* Pods-dodoco.debug.xcconfig */,
+				05F85293695ACC44E4F83E0F /* Pods-dodoco.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5640A6969201B41630C28733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD83F736E9DE394201FBD55F /* Pods_dodoco.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A90551B227DB36CF00E93360 = {
+			isa = PBXGroup;
+			children = (
+				A90551BD27DB36CF00E93360 /* dodoco */,
+				A90551BC27DB36CF00E93360 /* Products */,
+				1902AAF87E92E51865953E4C /* Pods */,
+				5640A6969201B41630C28733 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A90551BC27DB36CF00E93360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90551BB27DB36CF00E93360 /* dodoco.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90551BD27DB36CF00E93360 /* dodoco */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78AA627DE172700FACACF /* DI */,
+				A9B78AA127DE103100FACACF /* Core */,
+				A9B78A9927DDF16E00FACACF /* UI */,
+				A90551DB27DCEE6500E93360 /* Network */,
+				A90551D727DCED3200E93360 /* Models */,
+				A90551D627DCED2400E93360 /* Services */,
+				A90551BE27DB36CF00E93360 /* AppDelegate.swift */,
+				A90551C027DB36CF00E93360 /* SceneDelegate.swift */,
+				A90551C727DB36D200E93360 /* Assets.xcassets */,
+				A90551C927DB36D200E93360 /* LaunchScreen.storyboard */,
+				A90551CC27DB36D200E93360 /* Info.plist */,
+			);
+			path = dodoco;
+			sourceTree = "<group>";
+		};
+		A90551D627DCED2400E93360 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A90551D827DCED7800E93360 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A90551D727DCED3200E93360 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78A9F27DDFD5000FACACF /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A90551DB27DCEE6500E93360 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78A9D27DDF66C00FACACF /* NetworkRequestManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A9B78A9927DDF16E00FACACF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78A9A27DDF17B00FACACF /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A9B78A9A27DDF17B00FACACF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A90551C427DB36CF00E93360 /* Main.storyboard */,
+				A90551C227DB36CF00E93360 /* LoginViewController.swift */,
+				A9B78A9B27DDF59300FACACF /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A9B78AA127DE103100FACACF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78AA227DE105700FACACF /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A9B78AA627DE172700FACACF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A9B78AA727DE180400FACACF /* ServiceAssembly.swift */,
+				A9B78AA927DE188700FACACF /* DependencyProvider.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90551BA27DB36CF00E93360 /* dodoco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90551CF27DB36D200E93360 /* Build configuration list for PBXNativeTarget "dodoco" */;
+			buildPhases = (
+				B45BA1352BB97961D3EA5085 /* [CP] Check Pods Manifest.lock */,
+				A90551B727DB36CF00E93360 /* Sources */,
+				A90551B827DB36CF00E93360 /* Frameworks */,
+				A90551B927DB36CF00E93360 /* Resources */,
+				3C841F8E290A92FAFFA9A6F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dodoco;
+			productName = dodoco;
+			productReference = A90551BB27DB36CF00E93360 /* dodoco.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90551B327DB36CF00E93360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A90551BA27DB36CF00E93360 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A90551B627DB36CF00E93360 /* Build configuration list for PBXProject "dodoco" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90551B227DB36CF00E93360;
+			productRefGroup = A90551BC27DB36CF00E93360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90551BA27DB36CF00E93360 /* dodoco */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90551B927DB36CF00E93360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90551CB27DB36D200E93360 /* LaunchScreen.storyboard in Resources */,
+				A90551C827DB36D200E93360 /* Assets.xcassets in Resources */,
+				A90551C627DB36CF00E93360 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C841F8E290A92FAFFA9A6F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dodoco/Pods-dodoco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dodoco/Pods-dodoco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dodoco/Pods-dodoco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45BA1352BB97961D3EA5085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dodoco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90551B727DB36CF00E93360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90551C327DB36CF00E93360 /* LoginViewController.swift in Sources */,
+				A90551BF27DB36CF00E93360 /* AppDelegate.swift in Sources */,
+				A90551C127DB36CF00E93360 /* SceneDelegate.swift in Sources */,
+				A9B78AA827DE180400FACACF /* ServiceAssembly.swift in Sources */,
+				A9B78A9C27DDF59300FACACF /* LoginViewModel.swift in Sources */,
+				A9B78AAA27DE188700FACACF /* DependencyProvider.swift in Sources */,
+				A9B78A9E27DDF66C00FACACF /* NetworkRequestManager.swift in Sources */,
+				A9B78AA327DE105700FACACF /* BaseViewController.swift in Sources */,
+				A90551D927DCED7800E93360 /* AuthService.swift in Sources */,
+				A9B78AA027DDFD5000FACACF /* UserInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A90551C427DB36CF00E93360 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90551C527DB36CF00E93360 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90551C927DB36D200E93360 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90551CA27DB36D200E93360 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90551CD27DB36D200E93360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90551CE27DB36D200E93360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90551D027DB36D200E93360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792713EC6EB45F783F66B47B /* Pods-dodoco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dodoco/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamyoad.dodoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A90551D127DB36D200E93360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F85293695ACC44E4F83E0F /* Pods-dodoco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dodoco/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamyoad.dodoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90551B627DB36CF00E93360 /* Build configuration list for PBXProject "dodoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90551CD27DB36D200E93360 /* Debug */,
+				A90551CE27DB36D200E93360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90551CF27DB36D200E93360 /* Build configuration list for PBXNativeTarget "dodoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90551D027DB36D200E93360 /* Debug */,
+				A90551D127DB36D200E93360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90551B327DB36CF00E93360 /* Project object */;
+}
